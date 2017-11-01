@@ -2,7 +2,6 @@ body{
   background-color: #00789D;
   margin: 0 auto;
   background-size: 100%;
-  transition: 1s;
 
 }
 nav{
@@ -14,7 +13,7 @@ nav{
 
 li{
   display: inline;
-  margin-right: 40px;
+  margin-right: 20px;
 
 }
 
@@ -27,6 +26,7 @@ li a{
 li a:hover{
   color: rgba(255,255,255,1);
 }
+
 
 .intro h1{
 

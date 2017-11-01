@@ -39,13 +39,10 @@ div{
   width: 140px;
   position: relative;
   border-radius: 70px;
-  border: 5px solid #FFBD33;
+  border: 6px dotted rgba(240,100,100,0.9);
   opacity: 0;
   left:520px;
   top: 80px;
-}
-#seoul:hover{
-  opacity: 1;
 }
 
 #jeju{
@@ -54,15 +51,30 @@ div{
   width: 120px;
   position: relative;
   border-radius: 60px;
-  border: 5px solid #FFBD33;
+  border: 6px dotted #FFBD33;
   opacity: 0;
   position: relative;
   left:480px;
   top: 450px;
 }
-#jeju:hover{
-  opacity: 1;
+
+#busan{
+  transition-duration: 1s;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  border-radius: 60px;
+  border: 6px dotted red;
+  opacity: 0;
+  position: relative;
+  left:769px;
+  top: 123px;
 }
+#busan:hover, #jeju:hover, #seoul:hover{
+  opacity: 1;
+  
+}
+
 #seoul_description{
   transition: display 1s;
   transition-delay: opacity 1s;
