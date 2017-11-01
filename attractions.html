@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--  <script>
+  function hoverdiv(e,divid){
+     var left = e.clientX + "px";
+     var top = e.clientY + "px";
+     $("#"+divid).css('left',left);
+     $("#"+divid).css('top',top);
+     $("#"+divid).css('position','fixed');
+     $("#"+divid).toggle();
+     return false; }
+  </script>-->
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit|Lobster|Nunito|Quicksand" rel="stylesheet">
+
+  <title>zzang </title>
+
+<style>
+div{
+  position: absolute;
+  display: grid;
+
+}
+#map{
+  background: url("./img/korea_map.jpg");
+  background-size: 100%;
+  width: 550px;
+  height: 750px;
+  margin-top: -10px;
+  left: 400px;
+  z-index: -1;
+}
+#seoul{
+  /*background: #FFDDAA;*/
+  transition-duration: 1s;
+  height: 140px;
+  width: 140px;
+  position: relative;
+  border-radius: 70px;
+  border: 5px solid #FFBD33;
+  opacity: 0;
+  left:520px;
+  top: 80px;
+}
+#seoul:hover{
+  opacity: 1;
+}
+
+#jeju{
+  transition-duration: 1s;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  border-radius: 60px;
+  border: 5px solid #FFBD33;
+  opacity: 0;
+  position: relative;
+  left:480px;
+  top: 450px;
+}
+#jeju:hover{
+  opacity: 1;
+}
+#seoul_description{
+  transition: display 1s;
+  transition-delay: opacity 1s;
+  height: 300px;
+  width: 300px;
+  background: white;
+  opacity: 0.8;
+  position: relative;
+  display: none;
+  left: 50px;
+  border-radius: 150px;
+  text-align: center;
+}
+
+#seoul_description li{
+  display: block;
+}
+</style>
+
+</head>
+
+<body>
+
+<!--nav bar-->
+<nav>
+<ul class="nav">
+  <li class="home"><a href="./index.html">HOME</a></li>
+  <li class="language"><a href="./language.html">LANGUAGE</a></li>
+  <li class="foods"><a href="./foods.html">FOODS</a></li>
+  <li class="attractions"><a class="attractions_title" href="./attractions.html">ATTRACTIONS</a></li>
+  <li class="quiz"><a href="./quiz.html">QUIZ</a></li>
+</ul>
+</nav>
+<div>
+<div id="seoul"></div>
+<div id="jeonju"></div>
+<div id="jeju"></div>
+<div id="busan"></div>
+<div id="map"></div>
+</div>
+
+ <div id="seoul_description" style="display: none">
+   <ul>
+     <li>Kyungbok Palace</li>
+     <li>Namsan Tower</li>
+     <li>Jong Myo</li>
+     <li>Bukchon Hanok Village</li>
+     <li>MyeongDong District</li>
+   </ul>
+ </div>
+
+
+
+<script>
+$('#seoul').click(function()
+{
+  $('#seoul_description').show()
+}
+);
+
+$('div').hover(function()
+{
+   $('#seoul_description').hide()
+ });
+ /*
+$('#seoul_description').hover(function()
+{
+   $('#seoul_description').hide()
+ });*/
+/*
+$('#seoul_description').hover(function()
+{
+
+}, function()
+ {
+   $('#seoul_description').hide()
+ });*/
+
+</script>
+
+</body>
+
+</html>
