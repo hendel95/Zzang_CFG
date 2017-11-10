@@ -1,0 +1,77 @@
+
+nav{
+  background-color: #138d75;
+  font-size: 30px;
+}
+li{
+  display: inline;
+  margin-left: 40px;
+}
+li a{
+  text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+  color :rgba(255,255,255,0.9);
+}
+
+section{
+  display:block;
+  float:left;
+  border:2px solid green;
+  min-height:300px;
+  width:100%;
+  border-radius:4px;
+}
+
+section a{
+  display:block;
+  float:left;
+  width:25%;
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  background:#1271C7;
+}
+
+img{
+ display:block;
+ float:left;
+ height:200px;
+ width:200px;
+ border-radius: 10px;
+ margin:10px;
+ -webkit-transition:all .8s linear;
+ -moz-transition:all .8s linear;
+ -o-transition:all .8s linear;
+ -ms-transition:all .8s linear;
+ transition:all .8s linear;
+ margin-top:20px;
+}
+
+
+a:focus[data-filter]{
+    opacity:.8;
+     outline:none;
+}
+
+a[data-filter="traditional"]:focus ~ img:not([data-filter="traditional"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+
+a[data-filter="street"]:focus ~ img:not([data-filter="street"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+
+}
+
+a[data-filter="beverage"]:focus ~ img:not([data-filter="beverage"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
