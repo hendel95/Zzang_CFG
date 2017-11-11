@@ -1,3 +1,63 @@
 body{
-  background: url("./img/main.jpg");
+  background-color: #00789D;
+  margin: 0 auto;
+  background-size: 100%;
+
+}
+nav{
+  color: rgba(255,255,255,1);
+  font-size: 20px;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+li{
+  display: inline;
+  margin-right: 20px;
+
+}
+
+li a{
+  text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+  color : rgba(255,255,255,0.5);
+  transition: 1s;
+}
+li a:hover{
+  color: rgba(255,255,255,1);
+}
+
+
+.intro h1{
+
+  font-size: 150px;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: -15px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.intro h2{
+  font-size: 60px;
+  font-family: 'Quicksand', sans-serif;
+
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+.attractions_title{
+    color: rgba(240,100,100,0.9);
+}
+.home_title{
+    color: rgba(240,100,100,0.9);
+}
+.foods_title{
+    color: rgba(240,100,100,0.9);
+}
+.language_title{
+    color: rgba(240,100,100,0.9);
+}
+.quiz_title{
+    color: rgba(240,100,100,0.9);
 }
