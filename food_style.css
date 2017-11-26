@@ -26,7 +26,7 @@ li a:hover{
 }
 
 div{
- display: block;
+ display: inline-block;
  float:left;
  height:200px;
  width:200px;
@@ -41,14 +41,13 @@ div{
 
 
 .image {
-  display: block;
+  display: inline-block;
   width: 200px;
   height: 200px;
   border-radius: 10px;
   margin:10px;
   margin-top:20px;
 }
-
 
 .container {
   position: relative;
@@ -89,10 +88,12 @@ section{
   float:left;
   width:70%;
   margin-left: 15%;
+  position: fixed;
+  padding-top: 8%;
 }
 
 section a{
-  display:block;
+  display:inline-block;
   float:left;
   width:25%;
   text-decoration:none;
@@ -100,7 +101,6 @@ section a{
   padding:5px 0;
   color:black;
   font-family: 'Kanit', sans-serif;
-  margin-top: 12%;
 }
 
 a:focus[data-filter]{
@@ -113,42 +113,27 @@ a:hover{
 
 
 a[data-filter="traditional"]:focus ~ div img:not([data-filter="traditional"]){
-  height:0px;
-  width:0px;
-  display: :none;
-  margin:0;
+  opacity: 0.2;
 }
 
 a[data-filter="traditional"]:focus ~ .container:hover .overlay:not([data-filter="traditional"]){
-  height:0px;
-  width:0px;
+  display: inline;
   opacity: 0;
 }
 
 a[data-filter="street"]:focus ~ div img:not([data-filter="street"]){
-  height:0px;
-  width:0px;
-  display: :none;
-  margin:0;
-
+  opacity: 0.2;
 }
 
 a[data-filter="street"]:focus ~ .container:hover .overlay:not([data-filter="street"]){
-  height:0px;
-  width:0px;
   opacity: 0;
 }
 
 a[data-filter="beverage"]:focus ~ div img:not([data-filter="beverage"]){
-  height:0px;
-  width:0px;
-  display: :none;
-  margin:0;
+  opacity: 0.2;
 }
 
 
 a[data-filter="beverage"]:focus ~ .container:hover .overlay:not([data-filter="beverage"]){
-  height:0px;
-  width:0px;
   opacity: 0;
 }
