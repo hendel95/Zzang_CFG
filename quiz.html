@@ -1,67 +1,148 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/css" href="./css/quiz.css">
   <link href="https://fonts.googleapis.com/css?family=Kanit|Lobster|Nunito|Quicksand" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Zzang </title>
+  <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 
-  <title>zzang </title>
+  <script type="text/javascript">
 
-<style>
-body{
-  background: url("./img/main.jpg");
-  background-size: cover;
-}
-nav{
-  color: rgba(255,255,255,1);
-  font-size: 30px;
-}
-li{
-  display: inline;
-  margin-left: 40px;
+		var divWidth		= "800";	//���� 1�� ����ũ��
 
-}
+		//����
+		function prev()
+		{
+			$("#content").stop(true,true);
 
-li a{
-  text-decoration: none;
-  font-family: 'Kanit', sans-serif;
-  color :rgba(255,255,255,0.9);
-}
-.intro h1{
+			var moveX			= parseInt($("#content").css("margin-left"));
 
-  font-size: 150px;
-  color: rgba(255,255,255,0.9);
-  text-align: center;
-  margin-top: -15px;
-  font-family: 'Nunito', sans-serif;
+			if( moveX < 0 )
+			{
+				$("#content").animate({"margin-left":"+=" + divWidth + "px"},500);
+			}
+			else
+			{
+				alert("This is First Slide");
+				return;
+			}
+		}
 
-}
-.intro h2{
-  font-size: 60px;
-  font-family: 'Quicksand', sans-serif;
+		//����
+		function next()
+		{
+			$("#content").stop(true,true);
 
-  color: rgba(255,255,255,0.9);
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 20px;
-}
-.quiz_title{
-    color: rgba(240,100,100,0.9);
-}
+			var hiddenWidth		= ($("#content dd").length-1)*(-divWidth);
+			var moveX			= parseInt($("#content").css("margin-left")) ;
+			var lastWidth		= ( moveX - divWidth );
 
-</style>
+			if( hiddenWidth < moveX )
+			{
+				$("#content").animate({"margin-left":"-=" + divWidth + "px"},500);
+			}
+			else
+			{
+				alert("This is Last slide");
+				return;
+			}
+		}
+	</script>
+
+
 </head>
 
 <body>
 
 <!--nav bar-->
+
+
 <nav>
 <ul class="nav">
   <li class="home"><a href="./index.html">HOME</a></li>
   <li class="language"><a href="./language.html">LANGUAGE</a></li>
-  <li class="foods"><a href="./foods.html">FOODS</a></li>
-  <li class="main_attractions"><a class="main_attractions_title" href="./main_attractions.html">MAIN ATTRACTIONS</a></li>
+  <li class="foods"><a href="./food.html">FOODS</a></li>
+  <li class="attractions"><a  href="./attractions.html">ATTRACTIONS</a></li>
   <li class="quiz"><a class="quiz_title" href="./quiz.html">QUIZ</a></li>
 </ul>
-
 </nav>
+
+<div class="head">
+  <h1>Test your knowledge!</h1>
+  <h3>Total 5 questions</h3>
+</div>
+
+<div id="warp">
+  <div id="prevbtn" onclick="prev()"><img src="img/prev_img.gif" ></div>
+  <div id="mask">
+    <div id="content">
+      <dl>
+        <dt>
+          <dd>
+            <p>
+            Q1. What is the name of the most popular <br>Korean alcoholic beverage?
+            <br>
+            <br />A. 막걸리(Makgeoli)
+            <br />B. 소주(Soju)
+            <br />C. 맥주(Beer)
+            <br />D. 보드카(Vodka)
+            <img src="./img/soju.jpg" align="right">
+            </p>
+          </dd>
+          <dd ><center><p><br><br><br><strong>Answer</strong><br /> B. 소주(Soju)</p></center></dd>
+          <dd>
+            <p>
+              Q2. In which city is the Namsan Tower located?
+              <br>
+              <br />A. 부산(Busan)
+              <br />B. 전주(Jeonju)
+              <br />C. 서울(Seoul)
+              <br />D. 담양(Damyang)
+              <img src="./img/ntower.png" align="right">
+            </p>
+          </dd>
+          <dd ><center><p><br><br><br><strong>Answer</strong><br /> C. 서울(Seoul)</p></center></dd>
+          <dd>
+            <p>
+              Q3. What is the name of the dessert shown in the photo?
+              <br>
+              <br />A. 호떡(Hotteok)
+              <br />B. 붕어빵(Bung eo bbang)
+              <br />C. 팥빙수(Patbingsu)
+              <br />D. 김치(Kimchi)
+              <img src="./img/patbingsu.png" align="right">
+            </p>
+          </dd>
+          <dd ><center><p><br><br><br><strong>Answer</strong><br /> C. 팥빙수(Patbingsu)</p></center></dd>
+          <dd>
+            <p>
+              Q4. What does the following word mean in English?
+              <br>
+              <br />A. Father
+              <br />B. Mother
+              <br />C. Sister
+              <br />D. Brother
+              <img src="./img/mother.png" align="right">
+            </p>
+          </dd>
+          <dd ><center><p><br><br><br><strong>Answer</strong><br /> B. 엄마(Mother)</p></center></dd>
+          <dd>
+            <p>
+              Q5. What is number 7 in Sino Koran?
+              <br>
+              <br />A. 삼(Sam)
+              <br />B. 십(Shib)
+              <br />C. 오(Oh)
+              <br />D. 칠(Chil)
+            </p>
+          </dd>
+          <dd ><center><p><br><br><br><strong>Answer</strong><br />  D. 칠(Chil)</p></center></dd>
+        </dt>
+      </dl>
+    </div>
+  </div>
+  <div id="nextbtn" onclick="next()"><img src="img/next_img.gif"></div>
+</div>
 
 </body>
 

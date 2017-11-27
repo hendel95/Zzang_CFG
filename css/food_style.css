@@ -1,0 +1,176 @@
+
+body{
+  margin: 0;
+}
+
+
+
+nav{
+  background-color: #d4f4f9;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-left: -20px;
+<<<<<<< HEAD
+  width: 100%;
+=======
+}
+
+.nav a{
+  color: #404242;
+>>>>>>> f4e5798d1db178145bdad918d1d6d15802bf2f96
+}
+li{
+  display: inline;
+  margin-left: 20px;
+/*  background-color: #138d75;*/
+}
+li a{
+  text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+  color : rgba(255,255,255,0.5);
+  transition: 1s;
+}
+li a:hover{
+  color: rgba(255,255,255,1);
+}
+
+div{
+ display: inline-block;
+ float:left;
+ height:200px;
+ width:200px;
+ margin:10px;
+ -webkit-transition:all .8s linear;
+ -moz-transition:all .8s linear;
+ -o-transition:all .8s linear;
+ -ms-transition:all .8s linear;
+ transition:all .8s linear;
+ margin-top: 20px;
+}
+
+
+.image {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin:10px;
+  margin-top:20px;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:200px;
+  width: 200px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 10pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+section{
+  display:block;
+  float:left;
+  width:70%;
+  margin-left: 15%;
+  padding-top: 8%;
+}
+
+section a{
+  display:inline-block;
+  float:left;
+  width:25%;
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:black;
+  font-family: 'Kanit', sans-serif;
+}
+
+a:focus[data-filter]{
+    background-color:#138d75 ;
+     outline:none;
+}
+a:hover{
+    background-color:#138d75 ;
+}
+
+
+a[data-filter="traditional"]:focus ~ div img:not([data-filter="traditional"]){
+  opacity: 0.2;
+}
+
+a[data-filter="traditional"]:focus ~ .container:hover .overlay:not([data-filter="traditional"]){
+  display: inline;
+  opacity: 0;
+}
+
+a[data-filter="street"]:focus ~ div img:not([data-filter="street"]){
+  opacity: 0.2;
+}
+
+a[data-filter="street"]:focus ~ .container:hover .overlay:not([data-filter="street"]){
+  opacity: 0;
+}
+
+a[data-filter="beverage"]:focus ~ div img:not([data-filter="beverage"]){
+  opacity: 0.2;
+}
+
+
+a[data-filter="beverage"]:focus ~ .container:hover .overlay:not([data-filter="beverage"]){
+  opacity: 0;
+}
+
+
+/* Hongju Added this part*/
+
+
+
+
+.intro h1{
+
+  font-size: 150px;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: -15px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.intro h2{
+  font-size: 60px;
+  font-family: 'Quicksand', sans-serif;
+
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.foods_title{
+    color: rgba(240,100,100,0.9);
+}

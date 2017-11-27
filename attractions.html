@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/attractions.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit|Lobster|Nunito|Quicksand" rel="stylesheet">
+
+  <title>zzang </title>
+
+
+</head>
+
+<body>
+
+<!--nav bar-->
+<nav>
+<ul class="nav">
+  <li class="home"><a href="./index.html">HOME</a></li>
+  <li class="language"><a href="./language.html">LANGUAGE</a></li>
+  <li class="foods"><a href="./food.html">FOODS</a></li>
+  <li class="attractions"><a class="attractions_title" href="./attractions.html">ATTRACTIONS</a></li>
+  <li class="quiz"><a href="./quiz.html">QUIZ</a></li>
+</ul>
+</nav>
+<div>
+<div id="seoul"></div>
+<div id="jeonju"></div>
+<div id="jeju"></div>
+<div id="busan"></div>
+<div id="map"></div>
+</div>
+
+ <div id="seoul_description" style="display: none">
+   <ul>
+     <li>Kyungbok Palace</li>
+     <li>Namsan Tower</li>
+     <li>Jong Myo</li>
+     <li>Bukchon Hanok Village</li>
+     <li>MyeongDong District</li>
+   </ul>
+ </div>
+
+
+
+<script>
+$('#seoul').click(function()
+{
+  $('#seoul_description').show()
+}
+);
+
+$('div').hover(function()
+{
+   $('#seoul_description').hide()
+ });
+ /*
+$('#seoul_description').hover(function()
+{
+   $('#seoul_description').hide()
+ });*/
+/*
+$('#seoul_description').hover(function()
+{
+
+}, function()
+ {
+   $('#seoul_description').hide()
+ });*/
+
+</script>
+
+</body>
+
+</html>
