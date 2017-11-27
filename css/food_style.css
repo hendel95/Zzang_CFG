@@ -10,10 +10,14 @@ nav{
   font-size: 20px;
   margin-top: -10px;
   margin-left: -20px;
+<<<<<<< HEAD
+  width: 100%;
+=======
 }
 
 .nav a{
   color: #404242;
+>>>>>>> f4e5798d1db178145bdad918d1d6d15802bf2f96
 }
 li{
   display: inline;
@@ -93,7 +97,6 @@ section{
   float:left;
   width:70%;
   margin-left: 15%;
-  position: fixed;
   padding-top: 8%;
 }
 

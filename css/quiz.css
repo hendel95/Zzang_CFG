@@ -1,18 +1,15 @@
-body{
-  margin: 0;
-}
+
 
 nav{
   background-color: #138d75;
   font-size: 20px;
-  margin-top: 0px;
-  margin-left: -20px;
   width: 100%;
   position: fixed;
+  height: 7%;
 }
 li{
   display: inline;
-  margin-left: 20px;
+  margin-left: 45px;
   background-color: #138d75;
 }
 li a{
