@@ -1,24 +1,34 @@
+
 body{
   margin: 0;
 }
 
+
+
 nav{
-  background-color: #138d75;
+  background-color: #d4f4f9;
   font-size: 20px;
   margin-top: -10px;
   margin-left: -20px;
+<<<<<<< HEAD
   width: 100%;
+=======
+}
+
+.nav a{
+  color: #404242;
+>>>>>>> f4e5798d1db178145bdad918d1d6d15802bf2f96
 }
 li{
   display: inline;
   margin-left: 20px;
-  background-color: #138d75;
+/*  background-color: #138d75;*/
 }
 li a{
   text-decoration: none;
   font-family: 'Kanit', sans-serif;
   color : rgba(255,255,255,0.5);
-  transition: 0.5s;
+  transition: 1s;
 }
 li a:hover{
   color: rgba(255,255,255,1);
@@ -134,4 +144,33 @@ a[data-filter="beverage"]:focus ~ div img:not([data-filter="beverage"]){
 
 a[data-filter="beverage"]:focus ~ .container:hover .overlay:not([data-filter="beverage"]){
   opacity: 0;
+}
+
+
+/* Hongju Added this part*/
+
+
+
+
+.intro h1{
+
+  font-size: 150px;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: -15px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.intro h2{
+  font-size: 60px;
+  font-family: 'Quicksand', sans-serif;
+
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.foods_title{
+    color: rgba(240,100,100,0.9);
 }
