@@ -1,0 +1,42 @@
+.navbar-default {
+  background-color: #d4f4f9;
+  border-color: #d4f4f9;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color:#454545;
+}
+.navbar-default .navbar-nav> li > a {
+  color: ##454545;
+}
+.navbar-default .navbar-nav > li> a:hover,
+.navbar-default .navbar-brand > li > a:focus {
+  background-color: #d4f4f9;
+}
+.navbar-default .navbar-nav > .active> a,
+.navbar-default .navbar-nav > .active> a:hover,
+.navbar-default .navbar-nav > .active> a:focus {
+  color:#d4f4f9;
+  background-color: #d4f4f9;
+
+}
+.navbar-default .navbar-text {
+  border-color: #d4f4f9
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color:#d4f4f9
+}
+
+.jumbotron{
+background-image:url(img/main-bg.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+padding:100px 20px 100px 20px;
+margin-bottom:70px;
+}
