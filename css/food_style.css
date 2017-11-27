@@ -8,7 +8,6 @@ nav{
   margin-top: -10px;
   margin-left: -20px;
   width: 100%;
-  position: fixed;
 }
 li{
   display: inline;
@@ -88,7 +87,6 @@ section{
   float:left;
   width:70%;
   margin-left: 15%;
-  position: fixed;
   padding-top: 8%;
 }
 
