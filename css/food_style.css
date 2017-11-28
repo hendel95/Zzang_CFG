@@ -6,33 +6,34 @@ body{
 
 
 nav{
-  background-color: #d4f4f9;
+  background-color:  #138d75;
   font-size: 20px;
   margin-top: -10px;
   margin-left: -20px;
-<<<<<<< HEAD
-  width: 100%;
-=======
 }
 
-.nav a{
-  color: #404242;
->>>>>>> f4e5798d1db178145bdad918d1d6d15802bf2f96
-}
 li{
   display: inline;
-  margin-left: 20px;
-/*  background-color: #138d75;*/
+  margin-right: 20px;
+
 }
+
+
 li a{
   text-decoration: none;
-  font-family: 'Kanit', sans-serif;
-  color : rgba(255,255,255,0.5);
+  font-family: 'Lato', sans-serif;
+  color : rgba(255,255,255,0.8);
   transition: 1s;
+  line-height: 1.8;
+  height: 100%;
+
 }
+
+
 li a:hover{
   color: rgba(255,255,255,1);
 }
+
 
 div{
  display: inline-block;

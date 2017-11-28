@@ -6,7 +6,6 @@ body{
 }
 nav{
   /*color: rgba(255,255,255,1);*/
-  background-color: rgba(0,0,0,0.8);
   font-size: 20px;
   margin-top: -10px;
   margin-left: -20px;
@@ -18,12 +17,18 @@ li{
 
 }
 
+
 li a{
   text-decoration: none;
-  font-family: 'Kanit', sans-serif;
-  color : rgba(255,255,255,0.5);
+  font-family: 'Lato', sans-serif;
+  color : rgba(255,255,255,0.8);
   transition: 1s;
+  line-height: 1.8;
+  height: 100%;
+
 }
+
+
 li a:hover{
   color: rgba(255,255,255,1);
 }
