@@ -1,11 +1,9 @@
-
 body{
   margin: 0;
 }
 
-
-
 nav{
+<<<<<<< HEAD
   background-color:  #138d75;
   font-size: 20px;
   margin-top: -10px;
@@ -16,6 +14,18 @@ li{
   display: inline;
   margin-right: 20px;
 
+=======
+  background-color: #138d75;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-left: -20px;
+  width: 100%;
+}
+li{
+  display: inline;
+  margin-left: 20px;
+  background-color: #138d75;
+>>>>>>> 002fab4decfc65a62b4852c985ac1f56308c7c8e
 }
 
 
@@ -36,7 +46,7 @@ li a:hover{
 
 
 div{
- display: inline-block;
+ display: block;
  float:left;
  height:200px;
  width:200px;
@@ -51,7 +61,7 @@ div{
 
 
 .image {
-  display: inline-block;
+  display: block;
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -91,6 +101,8 @@ div{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  word-break: normal;
+  padding-right: 8%;
 }
 
 section{
@@ -98,7 +110,7 @@ section{
   float:left;
   width:70%;
   margin-left: 15%;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 
 section a{
@@ -145,33 +157,4 @@ a[data-filter="beverage"]:focus ~ div img:not([data-filter="beverage"]){
 
 a[data-filter="beverage"]:focus ~ .container:hover .overlay:not([data-filter="beverage"]){
   opacity: 0;
-}
-
-
-/* Hongju Added this part*/
-
-
-
-
-.intro h1{
-
-  font-size: 150px;
-  color: rgba(255,255,255,0.9);
-  text-align: center;
-  margin-top: -15px;
-  font-family: 'Nunito', sans-serif;
-
-}
-.intro h2{
-  font-size: 60px;
-  font-family: 'Quicksand', sans-serif;
-
-  color: rgba(255,255,255,0.9);
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 20px;
-}
-
-.foods_title{
-    color: rgba(240,100,100,0.9);
 }
