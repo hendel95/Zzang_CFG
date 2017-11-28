@@ -73,12 +73,16 @@ li a:hover{
 #prevbtn { float:left; cursor:pointer; position:relative; top:90px; width:14px; height:28px; padding-right:20px; }
 #nextbtn { float:left; cursor:pointer; position:relative; top:90px; width:14px; height:28px; padding-left:20px; }
 
+body{
+  background-color: #fafafa;
+
+}
 
 nav{
   /*color: rgba(255,255,255,1);*/
   font-size: 20px;
   margin-top: 10px;
-  padding-left:13px;
+  padding-left:17px;
 
   background-color:  #138d75;
 

@@ -1,9 +1,11 @@
 body{
   margin: 0;
+  background-color: #fafafa;
+
 }
 
 nav{
-<<<<<<< HEAD
+
   background-color:  #138d75;
   font-size: 20px;
   margin-top: -10px;
@@ -13,21 +15,12 @@ nav{
 li{
   display: inline;
   margin-right: 20px;
-
-=======
-  background-color: #138d75;
-  font-size: 20px;
-  margin-top: -10px;
-  margin-left: -20px;
-  width: 100%;
-}
-li{
-  display: inline;
-  margin-left: 20px;
-  background-color: #138d75;
->>>>>>> 002fab4decfc65a62b4852c985ac1f56308c7c8e
 }
 
+.foods_title{
+  color: rgba(240,100,100,0.9);
+
+}
 
 li a{
   text-decoration: none;
