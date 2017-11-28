@@ -1,11 +1,12 @@
 body{
-  background-color: #00789D;
+  /*background-color: #00789D;*/
   margin: 0 auto;
   background-size: 100%;
 
 }
 nav{
-  color: rgba(255,255,255,1);
+  /*color: rgba(255,255,255,1);*/
+  background-color: rgba(0,0,0,0.8);
   font-size: 20px;
   margin-top: -10px;
   margin-left: -20px;
