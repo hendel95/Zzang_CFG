@@ -27,6 +27,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: black;
+    background-color: #fafafa;
     line-height: 1.8;
 }
 
@@ -39,27 +40,43 @@ body, html {
 }
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('/w3images/parallax1.jpg');
-    min-height: 100%;
-}
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
-    min-height: 400px;
-}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-#seoul{
+.example{
+  position: relative;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(1,1,1,0.3);
+}
+
+.example:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#seoul, #jeju, #busan{
     color: rgba(240,100,100,0.9);
     font-size: 50px;
 }
@@ -71,81 +88,6 @@ body, html {
     }
 }
 
-/*
-div{
-  position: absolute;
-  display: grid;
-
-}
-#map{
-  background: url("./img/korea_map.jpg");
-  background-size: 100%;
-  width: 550px;
-  height: 750px;
-  margin-top: -10px;
-
-  z-index: -1;
-}
-#seoul{
-
-  transition-duration: 1s;
-  height: 140px;
-  width: 140px;
-  position: relative;
-  border-radius: 70px;
-  border: 6px dotted rgba(240,100,100,0.9);
-  opacity: 0;
-  left: 100px;
-  top: 80px;
-}
-
-#jeju{
-  transition-duration: 1s;
-  height: 120px;
-  width: 120px;
-  position: relative;
-  border-radius: 60px;
-  border: 6px dotted #FFBD33;
-  opacity: 0;
-  position: relative;
-  left:80px;
-  top: 450px;
-}
-
-#busan{
-  transition-duration: 1s;
-  height: 120px;
-  width: 120px;
-  position: relative;
-  border-radius: 60px;
-  border: 6px dotted red;
-  opacity: 0;
-  position: relative;
-  left:370px;
-  top: 123px;
-}
-#busan:hover, #jeju:hover, #seoul:hover{
-  opacity: 1;
-
-}
-
-#seoul_description{
-  transition: display 1s;
-  transition-delay: opacity 1s;
-  height: 300px;
-  width: 300px;
-  background: white;
-  opacity: 0.8;
-  position: relative;
-  display: none;
-  left: 50px;
-  border-radius: 150px;
-  text-align: center;
-}
-
-#seoul_description li{
-  display: block;
-}*/
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -184,91 +126,108 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
+
 <div class="Seoul mySlides">
   <h1 class="w3-center" id="seoul">Seoul</h1>
-  <p class="w3-center"><em>Seoul is the capital city of Korea.<br>From modern skyscrapers and neon lights to Buddhist temples, palaces and pagodas<br> Seoul is a fascinating mix of old and new.</em></p><br>
+  <p class="w3-center"><em>Seoul is the capital city of South Korea.<br>From modern skyscrapers and neon lights to Buddhist temples, palaces and pagodas, Seoul is a fascinating mix of old and new.</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="./img/GyeongbokPlace.png" style="width:100%" onclick="location.href='http://www.royalpalace.go.kr/html/eng/main/main.jsp';" class="w3-hover-opacity" alt="Gyeongbok Palace">
+      <div class="example">
+      <img src="./img/GyeongbokPlace.png" style="width:100%" class="w3-hover-opacity" alt="Gyeongbok Palace">
+        <div class="overlay">
+         <div class="text"><a href="http://www.royalpalace.go.kr/html/eng/main/main.jsp" target="_blank" style="text-decoration:none">Gyeonbok Place</div>
+         </div>
+     </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="./img/bukchon.jpg" style="width:100%" onclick="location.href='http://hanok.seoul.go.kr/front/eng/index.do';" class="w3-hover-opacity" alt="Bukchon Hanok Space">
+      <div class="example">
+      <img src="./img/bukchon.jpg" style="width:100%" class="w3-hover-opacity" alt="Bukchon Hanok Space">
+      <div class="overlay">
+       <div class="text"><a href="http://hanok.seoul.go.kr/front/eng/index.do" target="_blank" style="text-decoration:none">Bukchon Hanok Space</div>
+       </div>
+   </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="./img/NseoulTower.jpeg" style="width:100%" onclick="location.href='http://www.nseoultower.co.kr/eng/';" class="w3-hover-opacity" alt="N Seoul Tower">
+            <div class="example">
+      <img src="./img/NseoulTower.jpeg" style="width:100%" class="w3-hover-opacity" alt="N Seoul Tower">
+      <div class="overlay">
+       <div class="text"><a href="http://www.nseoultower.co.kr/eng/" target="_blank" style="text-decoration:none">N Seoul Tower</div>
+       </div>
+    </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="./img/ssamjiGil.jpg" style="width:100%" onclick="location.href='http://www.hiinsa.com/eng/';" class="w3-hover-opacity" alt="Ssamji-Gil">
+      <div class="example">
+      <img src="./img/ssamjiGil.jpg" style="width:100%" class="w3-hover-opacity" alt="Ssamji-Gil">
+      <div class="overlay">
+       <div class="text"><a href="http://www.hiinsa.com/eng/" target="_blank" style="text-decoration:none">Insadong Ssamgi Gil</a></div>
+       </div>
+    </div>
     </div>
   </div>
+
+
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="./img/hangangPark.jpg" style="width:100%" onclick="location.href='http://english.seoul.go.kr/life-information/natural-attractions-parks/hangang/00-parks-hangang-river/';" class="w3-hover-opacity" alt="Yeouido Hangang Park">
+      <div class="example">
+      <img src="./img/hangangPark.jpg" style="width:100%" class="w3-hover-opacity" alt="Yeouido Hangang Park">
+      <div class="overlay">
+       <div class="text"><a href="http://english.seoul.go.kr/life-information/natural-attractions-parks/hangang/00-parks-hangang-river/" target="_blank" style="text-decoration:none">Yeouido Hangang Park</a></div>
+       </div>
+
+    </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="./img/SkyPark.jpg" style="width:100%" target="_blank" onclick="location.href='http://english.seoul.go.kr/life-information/natural-attractions-parks/parks/?pidx=7';" class="w3-hover-opacity" alt="Hanuel(sky) Park">
+    <div class="example">
+      <img src="./img/SkyPark.jpg" style="width:100%" target="_blank" class="w3-hover-opacity" alt="Hanuel(sky) Park">
+      <div class="overlay">
+       <div class="text"><a href="http://english.seoul.go.kr/life-information/natural-attractions-parks/parks/?pidx=7" target="_blank" style="text-decoration:none">Hanuel Park</a></div>
+       </div>
+    </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="./img/ddp.jpg" style="width:100%" onclick="location.href='http://www.ddp.or.kr/main?hl=en_US';" class="w3-hover-opacity" alt="Dongdeamun Design Plaza">
+      <div class="example">
+      <img src="./img/ddp.jpg" style="width:100%" class="w3-hover-opacity" alt="Dongdeamun Design Plaza">
+      <div class="overlay">
+       <div class="text"><a href="http://www.ddp.or.kr/main?hl=en_US" target="_blank" style="text-decoration:none">Dongdeamun Design Plaza</a></div>
+       </div>
+     </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="./img/MyeongDong.jpeg" style="width:100%" onclick="location.href='http://www.junggu.seoul.kr/tour/eng/content.do?cmsid=5201&contentId=6998';" class="w3-hover-opacity" alt="Myeongdong Street">
+      <div class="example">
+      <img src="./img/MyeongDong.jpeg" style="width:100%" class="w3-hover-opacity" alt="Myeongdong Street">
+      <div class="overlay">
+       <div class="text"><a href="http://www.junggu.seoul.kr/tour/eng/content.do?cmsid=5201&contentId=6998" target="_blank" style="text-decoration:none">Myeongdong Street</a></div>
+       </div>
+      </div>
     </div>
 
   </div>
-</div>
 
+</div>
+<!-- BUSAN -->
 <div class="Busan mySlides">
-  <h1 class="w3-center" id="seoul">Busan</h1>
-  <p class="w3-center"><em>Seoul is the capital city of Korea.<br>From modern skyscrapers and neon lights to Buddhist temples, palaces and pagodas<br> Seoul is a fascinating mix of old and new.</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="./img/GyeongbokPlace.png" style="width:100%" onclick="location.href='http://www.royalpalace.go.kr/html/eng/main/main.jsp';" class="w3-hover-opacity" alt="Gyeongbok Palace">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./img/bukchon.jpg" style="width:100%" onclick="location.href='http://hanok.seoul.go.kr/front/eng/index.do';" class="w3-hover-opacity" alt="Bukchon Hanok Space">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./img/NseoulTower.jpeg" style="width:100%" onclick="location.href='http://www.nseoultower.co.kr/eng/';" class="w3-hover-opacity" alt="N Seoul Tower">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./img/ssamjiGil.jpg" style="width:100%" onclick="location.href='http://www.hiinsa.com/eng/';" class="w3-hover-opacity" alt="Ssamji-Gil">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="./img/hangangPark.jpg" style="width:100%" onclick="location.href='http://english.seoul.go.kr/life-information/natural-attractions-parks/hangang/00-parks-hangang-river/';" class="w3-hover-opacity" alt="Yeouido Hangang Park">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./img/SkyPark.jpg" style="width:100%" target="_blank" onclick="location.href='http://english.seoul.go.kr/life-information/natural-attractions-parks/parks/?pidx=7';" class="w3-hover-opacity" alt="Hanuel(sky) Park">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./img/ddp.jpg" style="width:100%" onclick="location.href='http://www.ddp.or.kr/main?hl=en_US';" class="w3-hover-opacity" alt="Dongdeamun Design Plaza">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./img/MyeongDong.jpeg" style="width:100%" onclick="location.href='http://www.junggu.seoul.kr/tour/eng/content.do?cmsid=5201&contentId=6998';" class="w3-hover-opacity" alt="Myeongdong Street">
-    </div>
-
-  </div>
+  <h1 class="w3-center" id="busan">Busan</h1>
+  <p class="w3-center"><em>Seoul is the capital city of South Korea.<br>From modern skyscrapers and neon lights to Buddhist temples, palaces and pagodas, Seoul is a fascinating mix of old and new.</em></p><br>
 </div>
+
+
+
+<!--JEJU -->
+
+<div class="Jeju mySlides">
+  <h1 class="w3-center" id="jeju">Jeju</h1>
+  <p class="w3-center"><em>Seoul is the capital city of South Korea.<br>From modern skyscrapers and neon lights to Buddhist temples, palaces and pagodas, Seoul is a fascinating mix of old and new.</em></p><br>
+</div>
+
 
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
